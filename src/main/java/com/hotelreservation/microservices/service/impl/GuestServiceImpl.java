@@ -29,8 +29,8 @@ public class GuestServiceImpl implements IGuestService {
 
 
     @Override
-    public GuestVO findGuestById(Long id) throws GuestNotFoundException {
-        return Optional.of(guestRepository.findByguestId(id)).
+    public GuestVO findGuestById(String guestId) throws GuestNotFoundException {
+        return Optional.of(guestRepository.findByguestId(Long.parseLong(guestId))).
                 map(guestServiceConverter::convertEntityToVO).orElseThrow(() ->
                 new GuestNotFoundException (DemoAppConstants.GUEST_NOT_FOUND_ERROR_MESSAGE));
     }

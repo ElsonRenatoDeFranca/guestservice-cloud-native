@@ -14,10 +14,10 @@ public interface IGuestService {
 
     /**
      *
-     * @param id
+     * @param guestId
      * @return
      */
-    GuestVO findGuestById(Long id)  throws GuestNotFoundException;
+    GuestVO findGuestById(String guestId)  throws GuestNotFoundException;
 
     /**
      *

@@ -44,7 +44,7 @@ public class GuestController {
 
     @RequestMapping(method=RequestMethod.GET,value="api/guests/{guestId}")
     @ApiOperation(value="Get guest by id", notes="Gets an specific guest by code", nickname="getGuestById")
-    public ResponseEntity<GuestVO> findGuestById(@PathVariable(name="guestId") Long guestId){
+    public ResponseEntity<GuestVO> findGuestById(@PathVariable(name="guestId") String guestId){
         GuestVO guestVO = null;
         try {
             guestVO = guestService.findGuestById(guestId);
