@@ -5,9 +5,12 @@ com\hotelreservation\microservices\controller\GuestController.class
 com\hotelreservation\microservices\demoapp\GuestCloudNativeMicroservice.class
 com\hotelreservation\microservices\exceptions\GuestAlreadyRegisteredException.class
 com\hotelreservation\microservices\constants\DemoAppConstants.class
+com\hotelreservation\microservices\config\RestTemplateConfig$1.class
+com\hotelreservation\microservices\config\RestTemplateConfig.class
 com\hotelreservation\microservices\entity\Guest.class
 com\hotelreservation\microservices\exceptions\GuestNotFoundException.class
 com\hotelreservation\microservices\repository\GuestRepository.class
+com\hotelreservation\microservices\service\IBookingService.class
 com\hotelreservation\microservices\service\impl\GuestServiceImpl.class
 com\hotelreservation\microservices\converter\IGuestServiceConverter.class
 com\hotelreservation\microservices\converter\GuestServiceConverterImpl.class

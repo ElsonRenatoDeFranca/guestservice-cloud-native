@@ -2,11 +2,13 @@ C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\exceptions\GuestAlreadyRegisteredException.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\demoapp\GuestCloudNativeMicroservice.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\converter\GuestServiceConverterImpl.java
+C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\config\RestTemplateConfig.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\entity\Guest.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\exceptions\GuestNotFoundException.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\repository\GuestRepository.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\converter\IGuestServiceConverter.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\service\impl\GuestServiceImpl.java
+C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\service\IBookingService.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\config\SwaggerConfig.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\vo\GuestVO.java
 C:\Development\PetProjects\microservices\guest-springcloud-service\src\main\java\com\hotelreservation\microservices\service\IGuestService.java
