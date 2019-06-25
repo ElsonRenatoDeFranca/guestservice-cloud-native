@@ -14,3 +14,16 @@ public class GuestCloudNativeMicroservice {
 	}
 }
 
+2- We also need to add the following dependencies to the pom.xml file
+
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
+
+<dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-eureka</artifactId>
+     <version>1.4.7.RELEASE</version>
+</dependency>
+
