@@ -74,23 +74,4 @@ public class GuestController {
     }
 
 
-    /*
-        @RequestMapping(method=RequestMethod.POST, value="/guests/{guestCode}/rooms",produces = MediaType.APPLICATION_JSON_VALUE)
-    @ApiOperation(value="Guest check in", notes="Check a new guest in the Hotel", nickname="saveGuest")
-    public ResponseEntity<Guest> checkin(@PathVariable(name="guestCode") String guestCode, @RequestBody Room room){
-
-        Guest registeredGuest = null;
-        try {
-            registeredGuest = guestService.checkIn(guestCode, room);
-            return new ResponseEntity<> (registeredGuest,HttpStatus.OK);
-        } catch (RoomNotFoundException prodEx) {
-            System.err.println(prodEx.getMessage());
-            return new ResponseEntity<>(registeredGuest, HttpStatus.BAD_REQUEST);
-        }
-        catch(RoomFullException roomFullEx){
-            return new ResponseEntity<>(registeredGuest, HttpStatus.BAD_REQUEST);
-        }
-    }
-    */
-
 }

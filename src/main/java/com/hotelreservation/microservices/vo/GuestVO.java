@@ -23,13 +23,4 @@ public class GuestVO {
     private String lastName;
 
     private String emailAddress;
-
-    private String address;
-
-    private String state;
-
-    private String country;
-
-    private String phoneNumber;
-
 }
