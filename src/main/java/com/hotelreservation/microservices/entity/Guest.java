@@ -5,12 +5,18 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 /**
  * Created by e068635 on 6/7/2019.
@@ -31,31 +37,20 @@ public class Guest {
     @Setter(AccessLevel.NONE)
     private Long id;
 
-    @Column(name="GUEST_ID", length = 20)
+    @Column(name="GUEST_ID", length = 10)
     private Long guestId;
 
-    @Column(name="FIRST_NAME", length = 64)
+    @Column(name="FIRST_NAME", length = 30)
     private String firstName;
 
-    @Column(name="LAST_NAME", length = 64)
+    @Column(name="LAST_NAME", length = 30)
     private String lastName;
 
-    @Column(name="EMAIL_ADDRESS", length = 64)
+    @Column(name="EMAIL", length = 30)
     private String emailAddress;
 
-    @Column(name="ADDRESS", length = 64)
-    private String address;
 
-    @Column(name="STATE", length = 12)
-    private String state;
-
-    @Column(name="COUNTRY", length = 64)
-    private String country;
-
-    @Column(name="PHONE_NUMBER", length = 24)
-    private String phoneNumber;
-
-    /*@ManyToMany(fetch = FetchType.LAZY,
+    @ManyToMany(fetch = FetchType.LAZY,
             cascade = {
                     CascadeType.PERSIST,
                     CascadeType.MERGE
@@ -63,9 +58,9 @@ public class Guest {
 
     @JoinTable(name = "BOOKING",
             joinColumns = { @JoinColumn(name = "GUEST_ID") },
-            inverseJoinColumns = { @JoinColumn(name = "ROOM_ID") })
+            inverseJoinColumns = { @JoinColumn(name = "ROOM_NUMBER") })
     private List<Room> rooms;
-    */
+
 
 
 
